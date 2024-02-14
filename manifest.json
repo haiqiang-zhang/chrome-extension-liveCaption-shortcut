@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Live Caption Shortcut",
+    "description": "This extension adds a shortcut to enable Live Caption on any webpage.",
+    "version": "0.1",
+    "permissions": [
+        "tabs", "scripting", "activeTab", "contextMenus"
+    ],
+    "host_permissions": [
+        "chrome://settings/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "main.html"
+    }
+  }
